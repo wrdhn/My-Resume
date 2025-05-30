@@ -1,197 +1,308 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CV Yhustya Restu Wardhana - Frontend Developer</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 30px;
-      background-color: #fff;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
-    }
-
-    header {
-      text-align: center;
-      margin-bottom: 30px;
-      border-bottom: 2px solid #3498db;
-      padding-bottom: 20px;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      color: #2c3e50;
-      margin-bottom: 5px;
-    }
-
-    .subtitle {
-      font-size: 1.2rem;
-      color: #3498db;
-    }
-
-    .contact-info {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      gap: 30px;
-      margin-top: 10px;
-      font-size: 0.95rem;
-      color: #555;
-    }
-
-    .contact-info i {
-      color: #3498db;
-      margin-right: 6px;
-    }
-
-    section {
-      margin-bottom: 30px;
-    }
-
-    h2 {
-      font-size: 1.5rem;
-      color: #3498db;
-      border-bottom: 1px solid #eee;
-      padding-bottom: 5px;
-      margin-bottom: 15px;
-    }
-
-    .project {
-      margin-bottom: 20px;
-      border-left: 3px solid #3498db;
-      padding-left: 15px;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    .skills-columns {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-
-    @media (max-width: 768px) {
-      .container{
-        margin-block:0;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Yhustya Restu Wardhana - Frontend Developer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f5f5f5;
+        color: #333;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
       }
-          .contact-info {
-      gap: 10px;
-    }
+
+      .container {
+        max-width: 900px;
+        margin-inline: auto;
+        margin-top: 40px;
+        margin-bottom: 10px;
+        padding: 30px;
+        background-color: #fff;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 30px;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 20px;
+      }
+
+      h1 {
+        margin-block: 0.5rem;
+        font-size: 2.5rem;
+        color: #2c3e50;
+      }
+
+      .subtitle {
+        font-size: 1.2rem;
+        color: #3498db;
+      }
+
+      .contact-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 10px;
+        font-size: 0.95rem;
+        color: #555;
+      }
+
+      .contact-info i {
+        color: #3498db;
+        margin-right: 6px;
+      }
+
+      .nav-link a {
+        text-decoration: none;
+        color: #333;
+      }
+
+      section {
+        margin-bottom: 30px;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        color: #3498db;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+      }
+
+      .project {
+        margin-bottom: 20px;
+        border-left: 3px solid #3498db;
+        padding-left: 15px;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
 
       .skills-columns {
-        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
       }
-    }
-  </style>
-</head>
-<body>
-  <main class="container">
-    <header>
-      <h1>Yhustya Restu Wardhana</h1>
-      <p class="subtitle">Frontend Developer Intern</p>
-      <div class="contact-info">
-        <span><i class="fas fa-envelope"></i> yhustyawardhana09@gmail.com</span>
-        <span><i class="fas fa-phone"></i> +62 882-1606-6043</span>
-        <span><i class="fas fa-map-marker-alt"></i> Temanggung, Jawa Tengah</span>
-      </div>
-    </header>
 
-    <section>
-      <h2>Profil</h2>
-      <p>
-        Lulusan SMK Negeri Tembarak dengan spesialisasi pengembangan web dan lulusan program Coding
-        Camp by DBS Foundation dengan predikat Distinction. Berpengalaman dalam frontend
-        development dengan HTML, CSS, dan JavaScript. Saat ini sedang aktif mempelajari React.js untuk
-        pengembangan UI yang lebih modular dan efisien. Memiliki kemampuan belajar cepat dan adaptif
-        terhadap teknologi baru dengan fokus pada pengalaman pengguna yang intuitif.
-      </p>
-    </section>
+      .btn-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 40px;
+      }
 
-    <section>
-      <h2>Proyek</h2>
+      .btn-container button {
+        width: 960px;
+        margin-inline: auto;
+        padding: 10px;
+        font-size: 1.5rem;
+        font-weight: 700;
+        background-color: #fff;
+        color: #3498db;
+        border: 0;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
 
-      <div class="project">
-        <strong>Notes App - Personal Project</strong> | Apr 2025 - Sekarang
-        <p>Aplikasi manajemen catatan pribadi dengan fitur CRUD dan pencarian.</p>
-        <ul>
-          <li>Membangun interface dengan HTML5, CSS3, dan JavaScript vanilla dengan fokus pada UX/UI</li>
-          <li>Mengimplementasikan DOM manipulation dan event handling untuk interaksi yang responsif</li>
-          <li>Menerapkan responsive design untuk kompatibilitas berbagai perangkat</li>
-          <li>Menggunakan Git untuk version control dan manajemen kode</li>
-          <li>Saat ini sedang mengintegrasikan React.js untuk meningkatkan maintainability dan modularitas</li>
-        </ul>
-      </div>
+      .btn-container button:hover {
+        background-color: #e7e7e7;
+        color: #3498dbb6;
+      }
 
-      <div class="project">
-        <strong>YuDeGo (Your Destination Go to)</strong> | Feb - Apr 2025
-        <p>Aplikasi rekomendasi wisata berbasis machine learning.</p>
-        <ul>
-          <li>Merancang prototype UI/UX menggunakan Figma untuk halaman destination</li>
-          <li>Berkontribusi dalam diskusi desain antarmuka dengan fokus pada pengalaman pengguna</li>
-          <li>Berkolaborasi dengan tim menggunakan Git/GitHub untuk version control</li>
-          <li>Mengembangkan endpoint REST API untuk popular destinations, top rated hotels, dan hotel listing dengan filter dan pagination</li>
-        </ul>
-      </div>
-    </section>
+      @media print {
+        body {
+          font-family: 'Times New Roman', Times, serif;
+        }
+        button {
+          display: none;
+        }
+      }
 
-    <section>
-      <h2>Keahlian</h2>
-      <div class="skills-columns">
-        <div>
-          <strong>Frontend </strong>
+      @media (max-width: 768px) {
+        .container {
+          margin-block: 0;
+        }
+        .contact-info {
+          gap: 10px;
+        }
+
+        .skills-columns {
+          grid-template-columns: 1fr;
+        }
+
+        .btn-container {
+        margin-block: 10px;
+        margin-inline: 5px;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>Yhustya Restu Wardhana</h1>
+        <p class="subtitle">Frontend Developer Intern</p>
+        <div class="contact-info">
+          <span class="nav-link">
+            <a href="mailto:yhustyawardhana09@email.com">
+              <i class="fas fa-envelope fa-fw fa-lg"></i>
+              yhustyawardhana09@gmail.com
+            </a>
+          </span>
+
+          <span class="nav-link">
+            <a href="https://wa.me/6288216066043">
+              <i class="fas fa-phone fa-fw fa-lg"></i> +62 882-1606-6043
+            </a>
+          </span>
+
+          <span class="nav-link">
+            <a href="https://github.com/wrdhn">
+              <i class="fab fa-github fa-fw fa-lg"></i> wrdhn
+            </a>
+          </span>
+
+          <span class="nav-link">
+            <a href="https://www.google.com/maps/search/Temanggung">
+              <i class="fas fa-map-marker-alt fa-fw fa-lg"></i> Temanggung, Jawa
+              Tengah
+            </a>
+          </span>
+        </div>
+      </header>
+
+      <section>
+        <h2>Profil</h2>
+        <p>
+          Lulusan SMK Negeri Tembarak pada jurusan Rekayasa Perangkat Lunak dan
+          lulusan program Coding Camp by DBS Foundation 2025 dengan predikat
+          Distinction. Berpengalaman dalam frontend development dengan HTML,
+          CSS, dan JavaScript. Saat ini sedang aktif mempelajari Typescript React.js. Memiliki kemampuan
+          belajar cepat dan adaptif terhadap teknologi baru dengan fokus pada
+          pengalaman pengguna yang intuitif.
+        </p>
+      </section>
+
+      <section>
+        <h2>Proyek</h2>
+
+        <div class="project">
+          <strong>Notes App - Personal Project</strong> | Apr 2025 - Sekarang
+          <p>
+            Aplikasi manajemen catatan pribadi dengan fitur CRUD dan pencarian.
+          </p>
           <ul>
-            <li>HTML5, CSS3, JavaScript</li>
-            <li>DOM Manipulation, Event Handling</li>
-            <li>Bootstrap</li>
-            <li>Node.js</li>
-            <li>Local storage</li>
-            <li>Web Component</li>
-            <li>Responsive Design</li>
-            <li>React.js (fundamental, sedang dipelajari)</li>
-            <li>Redux (sedang dipelajari)</li>
-            <li>Webpack</li>
-            <li>UI/UX Principles</li>
-            <li>Figma (prototyping)</li>
+            <li>
+              Membangun interface dengan HTML5, CSS3, dan JavaScript vanilla
+              dengan fokus pada UX/UI
+            </li>
+            <li>
+              Mengimplementasikan DOM manipulation dan event handling untuk
+              interaksi yang responsif
+            </li>
+            <li>
+              Menerapkan responsive design untuk kompatibilitas berbagai
+              perangkat
+            </li>
+            <li>Menggunakan Git untuk version control dan manajemen kode</li>
+            <li>
+              Saat ini sedang mengintegrasikan React.js untuk meningkatkan
+              maintainability dan modularitas
+            </li>
           </ul>
         </div>
-        <div>
-          <strong>Tools & Lainya</strong>
+
+        <div class="project">
+          <strong>YuDeGo (Your Destination Go to)</strong> | Feb - Apr 2025
+          <p>Aplikasi rekomendasi wisata berbasis machine learning.</p>
           <ul>
-            <li>Git/GitHub</li>
-            <li>Kemampuan belajar cepat</li>
-            <li>Komunikasi efektif</li>
-            <li>Manajemen waktu yang baik</li>
-            <li>Adaptabilitas dalam kerja remote</li>
-            <li>Bahasa: Indonesia (native), Inggris (B2)</li>
+            <li>
+              Merancang prototype UI/UX menggunakan Figma untuk halaman
+              destination
+            </li>
+            <li>
+              Berkontribusi dalam diskusi desain antarmuka dengan fokus pada
+              pengalaman pengguna
+            </li>
+            <li>
+              Berkolaborasi dengan tim menggunakan Git/GitHub untuk version
+              control
+            </li>
+            <li>
+              Mengembangkan endpoint REST API untuk popular destinations, top
+              rated hotels, dan hotel listing dengan filter dan pagination
+            </li>
           </ul>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section>
-      <h2>PENDIDIKAN & SERTIFIKASI</h2>
-      <ul>
-        <li><strong>SMK Negeri Tembarak</strong> (2022–2025) | Rekayasa Perangkat Lunak</li>
-        <li><strong>Coding Camp by DBS Foundation</strong> (Jan–Apr 2025) | Front-End & Back-End</li>
-        <li><strong>Dicoding</strong> (2025) | Back-End JavaScript, Front-End Web Development, Git with GitHub</li>
-      </ul>
-    </section>
-  </main>
-</body>
+      <section>
+        <h2>Keahlian</h2>
+        <div class="skills-columns">
+          <div>
+            <strong>Frontend </strong>
+            <ul>
+              <li>HTML5, CSS3, JavaScript</li>
+              <li>DOM Manipulation, Event Handling</li>
+              <li>Bootstrap</li>
+              <li>React.js</li>
+              <li>Node.js</li>
+              <li>Local storage</li>
+              <li>Web Component</li>
+              <li>Responsive Design</li>
+              <li>Vite</li>
+              <li>Webpack</li>
+              <li>UI/UX Principles</li>
+              <li>Figma (prototyping)</li>
+            </ul>
+          </div>
+          <div>
+            <strong>Tools & Lainya</strong>
+            <ul>
+              <li>Git/GitHub</li>
+              <li>Kemampuan belajar cepat</li>
+              <li>Komunikasi efektif</li>
+              <li>Manajemen waktu yang baik</li>
+              <li>Adaptabilitas dalam kerja remote</li>
+              <li>Bahasa: Indonesia (native), Inggris (B2)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>PENDIDIKAN & SERTIFIKASI</h2>
+        <ul>
+          <li>
+            <strong>SMK Negeri Tembarak</strong> (2022–2025) | Rekayasa
+            Perangkat Lunak
+          </li>
+          <li>
+            <strong>Coding Camp by DBS Foundation</strong> (Jan–Apr 2025) |
+            Front-End & Back-End
+          </li>
+          <li>
+            <strong>Dicoding</strong> (2025) | Back-End JavaScript, Front-End
+            Web Development, Git with GitHub
+          </li>
+        </ul>
+      </section>
+    </main>
+          <div class="btn-container">
+        <button onclick="window.print()">Print</button>
+      </div>
+
+  </body>
 </html>
