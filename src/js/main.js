@@ -1,22 +1,17 @@
-const printButton = document.querySelector(".print-btn");
-const downloadButton = document.querySelector(".download-btn");
+const actionButtons = document.querySelector(".action-buttons");
+const floatingDownload = document.querySelector(".floating-btn.download");
+const floatingPrint = document.querySelector(".floating-btn.print");
 
-function setupObserverForMobile() {
-  const isMobile = window.innerWidth <= 768;
+function toggleFloatingButtons(isVisible) {
+  if (floatingDownload) floatingDownload.style.display = isVisible ? "none" : "flex";
+  if (floatingPrint) floatingPrint.style.display = isVisible ? "none" : "flex";
+}
 
-  if (!isMobile) {
-    if (downloadButton) downloadButton.style.display = "block";
-    return;
-  }
-
+function setupObserver() {
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          downloadButton.style.display = "none";
-        } else {
-          downloadButton.style.display = "block";
-        }
+        toggleFloatingButtons(entry.isIntersecting);
       });
     },
     {
@@ -24,13 +19,11 @@ function setupObserverForMobile() {
     }
   );
 
-  if (printButton) {
-    observer.observe(printButton);
+  if (actionButtons) {
+    observer.observe(actionButtons);
   } else {
-    console.error("Element .print-btn tidak ditemukan");
+    console.error("Element .action-buttons tidak ditemukan");
   }
 }
 
-setupObserverForMobile();
-
-window.addEventListener("resize", setupObserverForMobile);
+setupObserver();
