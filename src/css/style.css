@@ -1,182 +1,186 @@
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #f5f5f5;
-        color: #333;
-        line-height: 1.5;
-        margin: 0;
-        padding: 0;
-        text-align: justify;
-      }
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+}
 
-      .container {
-        max-width: 900px;
-        margin-inline: auto;
-        margin-top: 40px;
-        margin-bottom: 10px;
-        padding: 30px;
-        background-color: #fff;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-      }
+.container {
+  max-width: 900px;
+  margin-inline: auto;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
 
-      header {
-        text-align: center;
-        margin-bottom: 30px;
-        border-bottom: 2px solid #3498db;
-        padding-bottom: 20px;
-      }
+header {
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 20px;
+}
 
-      h1 {
-        margin-block: 0.5rem;
-        font-size: 2.5rem;
-        color: #2c3e50;
-      }
+h1 {
+  margin-block: 0.5rem;
+  font-size: 2.5rem;
+  color: #2c3e50;
+}
 
-      .subtitle {
-        font-size: 1.2rem;
-        color: #3498db;
-      }
+.subtitle {
+  font-size: 1.2rem;
+  color: #3498db;
+}
 
-      .contact-info {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        margin-top: 10px;
-        font-size: 0.95rem;
-        color: #555;
-      }
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #555;
+}
 
-      .contact-info i {
-        color: #3498db;
-        margin-right: 6px;
-      }
+.contact-info i {
+  color: #3498db;
+  margin-right: 6px;
+}
 
-      .nav-link a {
-        text-decoration: none;
-        color: #333;
-      }
+.nav-link a {
+  text-decoration: none;
+  color: #333;
+}
 
-      section {
-        margin-bottom: 30px;
-      }
+section {
+  margin-bottom: 30px;
+}
 
-      h2 {
-        font-size: 1.5rem;
-        color: #3498db;
-        border-bottom: 1px solid #eee;
-        padding-bottom: 5px;
-        margin-bottom: 15px;
-        text-align: left;
-      }
+h2 {
+  font-size: 1.5rem;
+  color: #3498db;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  text-align: left;
+}
 
-      .project {
-        margin-bottom: 20px;
-        border-left: 3px solid #3498db;
-        padding-left: 15px;
-      }
+.project {
+  margin-bottom: 20px;
+  border-left: 3px solid #3498db;
+  padding-left: 15px;
+}
 
-      ul {
-        padding-left: 20px;
-      }
+ul {
+  padding-left: 20px;
+}
 
-      .skills-columns {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-      }
+.skills-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
 
-      .print-btn {
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
-        margin-bottom: 40px;
-      }
+.print-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
 
-      .print-btn button {
-        width: 960px;
-        margin-inline: auto;
-        padding: 10px;
-        font-size: 1.5rem;
-        font-weight: 700;
-        background-color: #fff;
-        color: #3498db;
-        border: 0;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-        transition: background-color 0.2s ease;
-        border-radius: 8px;
-      }
+.print-btn button {
+  width: 960px;
+  margin-inline: auto;
+  padding: 15px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: #fff;
+  color: #3498db;
+  border: 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease;
+  border-radius: 8px;
+}
 
-      .print-btn button:hover {
-        background-color: #e7e7e7;
-        color: #3498dbb6;
-      }
+.print-btn button:hover {
+  background-color: #e7e7e7;
+  color: #3498dbb6;
+}
 
-      .download-btn {
-        position: relative;
-      }
+.print-btn i {
+  margin-right: 5px;
+}
 
-      .download-btn {
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        z-index: 9999;
-        padding: 10px 15px;
-        background-color: #007bff;
-        color: white;
-        text-decoration: none;
-        border-radius: 8px;
-        font-weight: bold;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        transition: background-color 0.2s ease;
-      }
+.download-btn {
+  position: relative;
+}
 
-      .download-btn:hover {
-        background-color: #0056b3;
-      }
+.download-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease;
+}
 
-      .download-btn i {
-        margin-right: 5px;
-      }
+.download-btn:hover {
+  background-color: #0056b3;
+}
 
-      @media print {
-        body {
-          font-family: "Times New Roman", Times, serif;
-        }
+.download-btn i {
+  margin-right: 5px;
+}
 
-        .container {
-          box-shadow: none;
-        }
-        .contact-info {
-          flex-wrap: nowrap;
-          gap: 0.5;
-        }
+@media print {
+  body {
+    font-family: "Times New Roman", Times, serif;
+  }
 
-        .contact-info i {
-          margin-right: 2px;
-          font-size: 1rem;
-        }
+  .container {
+    box-shadow: none;
+  }
+  .contact-info {
+    flex-wrap: nowrap;
+    gap: 0.5;
+  }
 
-        button {
-          display: none;
-        }
-      }
+  .contact-info i {
+    margin-right: 2px;
+    font-size: 1rem;
+  }
 
-      @media (max-width: 768px) {
-        .container {
-          margin-block: 0;
-        }
-        .contact-info {
-          gap: 10px;
-        }
+  button {
+    display: none;
+  }
+}
 
-        .skills-columns {
-          grid-template-columns: 1fr;
-        }
+@media (max-width: 768px) {
+  .container {
+    margin-block: 0;
+  }
+  .contact-info {
+    gap: 10px;
+  }
 
-        .print-btn {
-          margin-block: 10px;
-          margin-inline: 5px;
-        }
-      }
+  .skills-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .print-btn {
+    margin-block: 10px;
+    margin-inline: 5px;
+  }
+}

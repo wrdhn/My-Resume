@@ -1,20 +1,36 @@
-const printButton = document.querySelector('.print-btn');
-const downloadButton = document.querySelector('.download-btn');
+const printButton = document.querySelector(".print-btn");
+const downloadButton = document.querySelector(".download-btn");
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
+function setupObserverForMobile() {
+  const isMobile = window.innerWidth <= 768;
+
+  if (!isMobile) {
+    if (downloadButton) downloadButton.style.display = "block";
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            downloadButton.style.display = 'none';
+          downloadButton.style.display = "none";
         } else {
-            downloadButton.style.display = 'block';
+          downloadButton.style.display = "block";
         }
-    });
-}, {
-    threshold: 0.1
-});
+      });
+    },
+    {
+      threshold: 0.1,
+    }
+  );
 
-if (printButton) {
+  if (printButton) {
     observer.observe(printButton);
-} else {
-    console.error('Element .print-btn tidak ditemukan');
+  } else {
+    console.error("Element .print-btn tidak ditemukan");
+  }
 }
+
+setupObserverForMobile();
+
+window.addEventListener("resize", setupObserverForMobile);
