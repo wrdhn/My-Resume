@@ -8,161 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <style>
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #f5f5f5;
-        color: #333;
-        line-height: 1.5;
-        margin: 0;
-        padding: 0;
-        text-align: justify;
-      }
-
-      .container {
-        max-width: 900px;
-        margin-inline: auto;
-        margin-top: 40px;
-        margin-bottom: 10px;
-        padding: 30px;
-        background-color: #fff;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-      }
-
-      header {
-        text-align: center;
-        margin-bottom: 30px;
-        border-bottom: 2px solid #3498db;
-        padding-bottom: 20px;
-      }
-
-      h1 {
-        margin-block: 0.5rem;
-        font-size: 2.5rem;
-        color: #2c3e50;
-      }
-
-      .subtitle {
-        font-size: 1.2rem;
-        color: #3498db;
-      }
-
-      .contact-info {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        margin-top: 10px;
-        font-size: 0.95rem;
-        color: #555;
-      }
-
-      .contact-info i {
-        color: #3498db;
-        margin-right: 6px;
-      }
-
-      .nav-link a {
-        text-decoration: none;
-        color: #333;
-      }
-
-      section {
-        margin-bottom: 30px;
-      }
-
-      h2 {
-        font-size: 1.5rem;
-        color: #3498db;
-        border-bottom: 1px solid #eee;
-        padding-bottom: 5px;
-        margin-bottom: 15px;
-      }
-
-      .project {
-        margin-bottom: 20px;
-        border-left: 3px solid #3498db;
-        padding-left: 15px;
-      }
-
-      ul {
-        padding-left: 20px;
-      }
-
-      .skills-columns {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-      }
-
-      .btn-container {
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
-        margin-bottom: 40px;
-      }
-
-      .btn-container button {
-        width: 960px;
-        margin-inline: auto;
-        padding: 10px;
-        font-size: 1.5rem;
-        font-weight: 700;
-        background-color: #fff;
-        color: #3498db;
-        border: 0;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-      }
-
-      .btn-container button:hover {
-        background-color: #e7e7e7;
-        color: #3498dbb6;
-      }
-
-      @media print {
-        body {
-          font-family: "Times New Roman", Times, serif;
-        }
-
-        .container {
-          box-shadow: none;
-        }
-        .contact-info {
-          flex-wrap: nowrap;
-          gap: 0.5;
-        }
-
-        .contact-info i {
-          margin-right: 2px;
-          font-size: 1rem;
-        }
-
-        button {
-          display: none;
-        }
-      }
-
-      @media (max-width: 768px) {
-        .container {
-          margin-block: 0;
-        }
-        .contact-info {
-          gap: 10px;
-        }
-
-        .skills-columns {
-          grid-template-columns: 1fr;
-        }
-
-        .btn-container {
-          margin-block: 10px;
-          margin-inline: 5px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="./src/css/style.css">
   </head>
   <body>
     <main class="container">
@@ -233,8 +79,10 @@
             </li>
             <li>Menggunakan Git untuk version control dan manajemen kode</li>
             <li>
-              Saat ini sedang mengintegrasikan React.js untuk meningkatkan
-              maintainability dan modularitas
+              Sedang melakukan refactor ke React.js untuk meningkatkan maintainability dan modularitas
+            </li>
+            <li>
+              Mengonsumsi endpoint REST API buatan sendiri menggunakan fetch untuk proses pengambilan dan manipulasi data catatan
             </li>
           </ul>
         </div>
@@ -315,8 +163,16 @@
         </ul>
       </section>
     </main>
-    <div class="btn-container">
+    <div class="download-btn">
+      <a href="CV_YHUSTYA_FRONTEND_DEVELOPER_INTERN.pdf" download class="download-btn">
+        <i class="fa-solid fa-file-arrow-down"></i>
+        Resume
+      </a>
+    </div>
+
+    <div class="print-btn">
       <button onclick="window.print()">Print</button>
     </div>
+    <script src="./src/js/main.js"></script>
   </body>
 </html>
